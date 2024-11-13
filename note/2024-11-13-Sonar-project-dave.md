@@ -1,10 +1,3 @@
----
-title: 声纳仿真-Dave
-date: 2024-11-13 10:44:26
-tags:
-    - ROS2
----
-
 ## 简介
 
 Previous sonar sensor plugins were based on image processing realms by translating each subpixel (point cloud) of the perceived image to resemble sonar sensors with or without sonar equations (Detailed Review for the previous image-based methods). Here, we have developed a `ray-based multibeam` sonar plugin to consider the `phase and reberveration physics of the acoustic signals providing raw sonar intensity-range data` using the point scattering model. Physical characteristics, including time and angle ambiguities and speckle noise, are considered. The time and angle ambiguity is a function of the point spread function of the coherent imaging system (i.e., side lobes due to matched filtering and beamforming). Speckle is the granular appearance of an image due to many interfering scatterers that are smaller than the resolution limit of the imaging system.
@@ -66,13 +59,13 @@ catkin build ${project_name}
 source devel/setup.bash
 roslaunch nps_uw_multibeam_sonar local_search_blueview_p900_nps_multibeam_urdf_standalone_ray.launch
 ```
-![](images/standalone_ray.png)
+![](standalone_ray.png)
 
 ```bash
 source devel/setup.bash
 roslaunch nps_uw_multibeam_sonar local_search_blueview_p900_nps_multibeam_ray.launch
 ```
-![](images/ray.png)
+![](ray.png)
 
 ## FAQ
 <font color=red>Q1:出现缺少libgazebo_ros_velodyne_gpu_laser.so</font>
