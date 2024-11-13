@@ -1,5 +1,5 @@
-# sonar_sim_lib
-Sonar simulation environment dynamic library
+## 简介
+ros声纳仿真相关配置文件
 
 ## 致谢
 [<font color =red>https://github.com/Field-Robotics-Lab/DAVE</font>](https://github.com/Field-Robotics-Lab/DAVE)
